@@ -42,7 +42,6 @@ public class Main {
         ReportUtils.printOrdersByStatus(orders);
         ReportUtils.printMostExpensiveOrder(orders);
         ReportUtils.printOrderCountByUser(orders);
-//        printOrderReport(orders);
 
         ReportUtils.findOrdersByStatus(orders, OrderStatus.PROCESSING);
         ProductUtils.updateProductPrice(products, "Laptop", 42000);
@@ -68,5 +67,6 @@ public class Main {
         List<String> sortedCustomerNames = StreamUtils.getSortedCustomerNamesByOrderTotal(orders);
         sortedCustomerNames.forEach(System.out::println);
 
+//        test
     }
 }
